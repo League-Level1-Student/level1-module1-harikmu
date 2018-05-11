@@ -2,23 +2,22 @@
  *    Copyright (c) The League of Amazing Programmers 2013-2017
  *    Level 1
  */
- 
 
 public class HarryPotter {
 
 	private boolean cloakOn;
-	
+
 	HarryPotter() {
 		System.out.println("making Harry Potter...");
 	}
 
-	void castSpell(String spell){
-System.out.println("casting spell: " + spell);
+	void castSpell(String spell) {
+		System.out.println("casting spell: " + spell);
 	}
 
 	void makeInvisible(boolean invisible) {
 		this.cloakOn = invisible;
-		
+
 		if (cloakOn)
 			System.out.println("Harry is invisible");
 		else
@@ -31,16 +30,15 @@ System.out.println("casting spell: " + spell);
 
 	public static void main(String[] args) {
 		// 1. make harry potter
+		HarryPotter h = new HarryPotter();
 		// 2. become invisible
+		h.makeInvisible(true);
 		// 3. spy on professor snape
+		h.spyOnSnape();
 		// 4. become visible again
+		h.makeInvisible(false);
 		// 5. cast a “stupefy” spell
+		h.castSpell("stupefy");
 	}
 
 }
-
-
-
-
-
-

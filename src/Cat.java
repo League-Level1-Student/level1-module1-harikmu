@@ -3,7 +3,6 @@
  *    Level 1
  */
 
-
 public class Cat {
 
 	private String name;
@@ -38,12 +37,13 @@ public class Cat {
 		/* Do the following things without changing the Cat class */
 
 		// 1. Make the Cat meow
-		
+		Cat c = new Cat("cat");
+		c.meow();
 		// 2. Get the Cat to print it's name
-
+		c.printName();
 		// 3. Kill the Cat!
-
+		for (int i = 0; i < 10; i++) {
+			c.kill();
+		}
 	}
 }
-
-
